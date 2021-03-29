@@ -1,8 +1,13 @@
 
+Usage
+
 ```
-dotnet new classlib --name ClassLib1
-dotnet new classlib --name ClassLib2
-dotnet new sln --name StyleCopDemo
-dotnet sln add .\StyleCopDemo.sln .\ClassLib1\ClassLib1.csproj
-dotnet sln add .\StyleCopDemo.sln .\ClassLib2\ClassLib2.csproj
+cd stylecop-core
+dotnet build
 ```
+
+How it works. 
+
+1. `Directory.Build.props` installs StyleCop.Analyzers for all projects.
+2. `my.stylecop.ruleset` set the rule level to error, warning, or none.
+3. `stylecop.json` tweaks some rules.
