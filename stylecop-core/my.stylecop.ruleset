@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<RuleSet Name="StyleCop.Analyzers rules with default action" Description="StyleCop.Analyzers with default action. Rules with IsEnabledByDefault = false are disabled." ToolsVersion="14.0">
+    <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers.SpecialRules">
+        <!-- https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA0001.md -->
+        <Rule Id="SA0001"  Action="None" />
+    </Rules>
+    <Rules AnalyzerId="StyleCop.Analyzers" RuleNamespace="StyleCop.Analyzers.DocumentationRules">
+        <!-- https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1633.md -->
+        <Rule Id="SA1633"  Action="None" />
+    </Rules>
+</RuleSet>
